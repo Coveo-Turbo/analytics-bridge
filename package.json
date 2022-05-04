@@ -1,0 +1,26 @@
+{
+    "name": "@coveops/analytics-bridge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "coveops build AnalyticsBridge --template vanilla",
+        "watch": "coveops build AnalyticsBridge --template vanilla --watch",
+        "serve": "coveops serve",
+        "precompile": "npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@coveops/localization-manager": "^1.0.1",
+        "coveo-search-ui": "^2.10095.4"
+    },
+    "devDependencies": {
+        "@coveops/cli": "^0.17.0"
+    }
+}
