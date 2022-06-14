@@ -94,8 +94,6 @@ function bridgeAnalyticsMetadata(searchInterface, action = item => item) {
  * Reconstructs the analytics events when used in a system that has JQuery and where the Coveo.Dom.useNativeJavaScriptEvents = true; doesn't work.
  */
 function bridgeAnalyticsMetadataLegacy(searchInterface, action = item => item) {
-    Coveo.Dom.useNativeJavaScriptEvents = true;
-
     Coveo.$$(searchInterface).on("analyticsEventReady", function(event) {
         const queryController = event.target.CoveoQueryController;
         const lastQuery = queryController.lastQuery;
